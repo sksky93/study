@@ -1,0 +1,24 @@
+아이오닉2 프레임워크란? -  한 번에 개발가능함.
+장점 - 개발비용,시간 단축!
+
+앱 개발 위한 준비.
+1)IDE/Editor 다운하기 - window는 cmd사용!
+2)node.js/npm 설치!
+3)ionic 설치! - npm install -g cordova ionic!
+
+설치까지 완료!  Users\pc\tabs가 경로
+
+
+hooks- 이미 만들어진 도구들 설치하는 곳.
+node_modules - npm install로 삭제시 복구가능
+platform
+resources - icon splash 적용
+src -  소스가 들어가는 공간.
+www - config는 코드바 설정위한 파일 app전체에 대한 설정.
+
+
+
+
+Today, I installed ionic and practice simple example.
+And i learned about basic structure in ionic.
+I will do my best to study Ionic.
