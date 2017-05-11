@@ -1,0 +1,22 @@
+src부분!!!!!
+
+ion app부분이 중요하다. 시작되는 부분이다.
+assets는 정적인 부분이다. 아이콘이 들어가있다.
+theme은 디자인 같은 요소가 있다.
+
+ 
+ 
+ 중요한 건 app,pages이다.
+ 
+ app-----
+ 
+app.html= 디자인적인 요소를 배치하는 곳
+app.scss= 배치된 요소를 좀 더 구체적으로 만지는 곳
+app.components.ts = 사용자와 상호작용하는 기능을 만드는 곳
+module.ts는 모듈을 관리한다. 페이지 추가시 여기도 추가.
+dev.ts는 개발자가 사용, prod는 사용자가 사용할 때 쓰임.
+
+
+ page------
+ 
+ home, contact, about으로 구성!
