@@ -20,3 +20,31 @@ dev.ts는 개발자가 사용, prod는 사용자가 사용할 때 쓰임.
  page------
  
  home, contact, about으로 구성!
+
+
+what is cordova?
+
+cordova can makes application by using html, javascript.
+
+Cordova Plugins using when want to use hardware function.
+Like, Device, Camera, Strorage.
+
+node_modules = Stroe javascript library.
+plugins = Store Cordova plugin.
+
+
+What is angular js?
+It prefers to use module.
+metadata = added information. (defined by decorator)
+
+
+What is TypeScript?
+JavaScript that scales.
+It's a typed superst of javascript.
+It provides Type, OOP, Scalability.-> UP Proablilty
+
+
+ts-> js
+difference = Type.
+
+
