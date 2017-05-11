@@ -1,0 +1,71 @@
+
+
+What are Events?
+visitor's action. 
+
+
+1) click() events
+
+$("p").click(function(){
+  $(this.hide();
+  });    --> if visitors click <p> it hides <p>
+  
+  
+  
+  
+2) dbclick() events
+$("p")dbclick(function(){
+  $(this).hide();
+  });   --->if visitors double click <p> it hides <p>
+  
+  
+  
+  
+ 3)mouseenter() events
+ $("#p1").mouseenter(function(){
+  alert("You entered p1!");
+  });   ---> if vistors put cursor on p1class it alerts message.
+  
+  4)mouseleave() events
+  $("#p1").mouseleave(function(){
+    alert("Bye! You now leave p1!");
+    });      ---> if visitors leave on p1class it alerts message.
+  
+  5)mousedown() events
+  $("#p1").mousedown(function(){
+    alert("Mouse donw over p1!");
+    });     ---> if visitors pressed down p1 it alrets message.
+    
+  
+  6)mouseup() events
+  $("p1").mouseup(function(){
+    alert("mouse up over p1!");
+    });      ----> if visitors up over mouse it alerts message.]
+    
+    7) hover() 
+   $("#p1").hover(function(){
+    alert("You entered p1!");
+},
+function(){
+    alert("Bye! You now leave p1!");
+});         ----> it provides mouseenter and mouseleave
+
+    8) focus()
+    $("input").focus(function(){
+      $(this).css("background-color", "#cccccc");
+        });     --> if current html get focus, it chagnes color
+        
+        
+    9) on() 
+    $("p").on({
+    mouseenter: function(){
+        $(this).css("background-color", "lightgray");
+    }, 
+    mouseleave: function(){
+        $(this).css("background-color", "lightblue");
+    }, 
+    click: function(){
+        $(this).css("background-color", "yellow");
+    } 
+});        ---> it join other events togeher. 
+  
