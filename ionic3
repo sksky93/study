@@ -1,0 +1,37 @@
+npm install -g typescript = 다운로드를 위한 명령어
+tsc-v를 통해서 버전확인이 가능하다.
+tsc 파일이름.ts명령어를 통해서 js로 변환이 가능하다.
+
+
+tpyescript확인은 playground에서 확인이 가능.
+검사(오른쪽 마우스 클릭)을 통해서 콘솔값도 확인 가능.
+
+
+
+variable = 변수.
+값을 저장하는 '공간'
+선언방법 - var 변수이름: 변수타입 = 저장하고자 하는 값
+                      :any,boolean,string,boolean이 있다. (any는 모를 때)
+               
+null vs undefined 
+null은 아무겂도 없다. undefined는 아직 타입이 정해지지 않았다.
+
+collection은 배열과 같은 느낌.
+var collection이름: number[] = [1,2,3];
+var collection이름: Array<number> = [1,2,3];   형식이 있음.
+
+
+함수 = function = action이다.
+입력과 출력이 있다.
+-------------
+function 함수이름(변수이름: 변수타입){
+  함수내용(' '+ 변수이름);
+}
+함수이름(입력값 입력);
+
+출력값은 return을 이용!
+
+함수를  변수에 저장하기!
+
+var f5 = (i:number) => i*i;
+즉, var 변수이름 = (입력값) => 함수내용;
