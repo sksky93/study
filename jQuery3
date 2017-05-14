@@ -1,0 +1,19 @@
+hide(), show()가 html의 요소에게도 영향을 준다.
+
+기본형식
+$(selector).hide(speed,callback); (show도 같다)
+
+
+toggle()
+$(selector).hide(speed,callback);과 hide,show와 같다.
+숨겨지는 요소를 보여줄 수 있다. (숨긴 후에)
+$(selector).click(function(){
+  $(selector).toggle();
+  });
+  
+  
+fadint Methods의 종류
+fadeIn()  - $(selector).fadeIn(speed,callback); 형식!
+fadeOut()  - $(selector).fadeOut(speed,callback); 형식
+fadeToggle() -$(selector).fadeToggle(speed,callback);  <In -> Out , Out -> In> 으로바꿈
+fadeTo()   -  $(selector).fadeIn(speed,opacity,callback); opacity= 투명성을 
