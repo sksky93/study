@@ -1,19 +1,51 @@
-hide(), show()가 html의 요소에게도 영향을 준다.
+jQery sliding Methods
+slideDown()   - $(selector).slideDown(speed,callback); 형식
+slideUp()      -$(selector).slideUp(speed,callback); 형식
+slideToggle()    -$(selector).slideToggle(speed,callback); 형식   down,up이 가능
 
-기본형식
-$(selector).hide(speed,callback); (show도 같다)
 
 
-toggle()
-$(selector).hide(speed,callback);과 hide,show와 같다.
-숨겨지는 요소를 보여줄 수 있다. (숨긴 후에)
-$(selector).click(function(){
-  $(selector).toggle();
-  });
-  
-  
-fadint Methods의 종류
-fadeIn()  - $(selector).fadeIn(speed,callback); 형식!
-fadeOut()  - $(selector).fadeOut(speed,callback); 형식
-fadeToggle() -$(selector).fadeToggle(speed,callback);  <In -> Out , Out -> In> 으로바꿈
-fadeTo()   -  $(selector).fadeIn(speed,opacity,callback); opacity= 투명성을 
+jQuery animate() Method.
+$(selector).animate({params},speed,callback); 의 형식
+params =  the CSS properties to be animated. 즉, 애니메이션화 하고픈 css형을 입력
+
+
+
+####By default, all HTML elements have a static position, and cannot be moved.
+To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!
+---모든 html요소는 기본값으로 움직이지 않게 되어있다. 위치를 조작하기위해서는 css의 요소를 상대적, 고정적이든 세팅해줘야한다.
+
+
+###Is it possible to manipulate ALL CSS properties with the animate() method?
+Is it possible to manipulate ALL CSS properties with the animate() method?
+-----대부분 그렇다, 그러나 기억해야할 중요한 것이 하나있다: 모든 속성들은 애니메이트 메소드를 사용할 때 camel-cased되어진다: padding-left대신에 paddingLeft라고 적어야 하며, margin-right대신에 marginRight로 적어야한다.
+또한, 색깔 에니메이션은 jQuery라이브러리에 포함되지 않는다.
+만약 색깔을 바꾸고싶다면, 색깔 애니메이션 플러그인을 jQuery.com으로부터 다운받아야 한다.
+
+
+$("button").click(function(){                                  
+    $("div").animate({
+        left: '250px',
+        opacity: '0.5',
+        height: '150px',
+        width: '150px'
+    });
+}); 
+
+
+$("button").click(function(){
+    var div = $("div");
+    div.animate({height: '300px', opacity: '0.4'}, "slow");
+    div.animate({width: '300px', opacity: '0.8'}, "slow");
+    div.animate({height: '100px', opacity: '0.4'}, "slow");
+    div.animate({width: '100px', opacity: '0.8'}, "slow");
+}); 
+
+
+$("button").click(function(){
+    var div = $("div");
+    div.animate({left: '100px'}, "slow");
+    div.animate({fontSize: '3em'}, "slow");
+}); 
+
+Some example.
