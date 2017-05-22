@@ -1,0 +1,32 @@
+What is Object?
+-> structure of many variable or function
+-> 여러 변수 (혹은 함수)가 하나로 구조화된 형태
+
+var 변수이름 ={}; 빈 오브젝트 생성
+오브젝트안의 있는 변수를 member혹은 property라고한다.
+
+변수이름[member이름]= 넣고싶은 값; 으로 추가가능.
+-------------------
+Interface
+
+
+interface = object에 대한 type
+여러 개의 함수와 여러 개의 변수 등이 구조적으로 어떻게 결합되어야 하는지에 대한 약속
+
+하나의 함수가 가져야 할 구조에 대한 약속
+
+interface 이름{
+ 내용들
+ } 
+ var 변수이름: interface이름{
+ interface에 선언된 타입에 맞게 선언해야한다.
+ };
+ 
+ interface 함수이름{
+(변수이름:type, 변수이름:type):리턴 값;
+}
+
+var 변수이름: 함수이름;
+mySearch= function(변수이름:type,변수이름:type){
+return ;
+}
